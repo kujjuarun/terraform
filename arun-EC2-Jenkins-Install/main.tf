@@ -60,7 +60,7 @@ resource "aws_instance" "Jenkins_Ec2_app_server" {
     sudo service jenkins start
     sudo sleep 30
     sudo cd /usr/local/bin
-    sudo yum install git
+    sudo yum -y install git
     sudo sleep 10
     sudo cd /usr/local/bin  
     sudo yum install -y yum-utils
